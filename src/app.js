@@ -8,10 +8,8 @@ import cookieParser from 'cookie-parser';
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:5173']; // Specify your frontend origin
-
 const corsOptions = {
-  origin: allowedOrigins,
+  origin: true,
   credentials: true, // This is required to allow cookies with CORS
 };
 
